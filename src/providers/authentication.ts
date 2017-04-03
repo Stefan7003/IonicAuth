@@ -56,7 +56,6 @@ export class Authentication {
   }
 
   doLogout(){
-    this.activeUser.next(null);
+    this.auth.logout();
   }
-
 }
