@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Authentication App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    If I am here, I am logged In !! {{this.auth.activeUser?.getValue().details.email}}
+  </p>
+  <p>
+    <button ion-button (click)="doLogout()">LOGOUT</button>
+  </p>
+</ion-content>
